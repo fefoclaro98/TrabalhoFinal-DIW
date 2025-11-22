@@ -1,0 +1,57 @@
+.banner-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(153, 127, 127, 0.1);
+}
+
+.slides {
+  font-size: 0;
+  white-space: nowrap;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  white-space: normal;
+  vertical-align: top;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.banner-nav {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner-nav .banner-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  background-color: #555;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: background-color 0.3s, opacity 0.3s;
+  padding: 0;
+}
+
+.banner-nav .banner-dot:hover {
+  background-color: #333;
+  opacity: 1;
+}
+
+.banner-nav .banner-dot.active {
+  background-color: white;
+  opacity: 1;
+}

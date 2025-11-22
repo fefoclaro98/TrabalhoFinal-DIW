@@ -1,0 +1,198 @@
+.vitrine-final {
+  width: 100%;
+  max-width: 100vw;
+  margin: 40px auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.vitrine-final * {
+  box-sizing: border-box;
+}
+
+.header-section {
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  font-size: 0;
+  /* Fix for inline-block spacing */
+}
+
+.header-text {
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+}
+
+.header-text h2 {
+  font-size: 28px;
+  margin: 0 0 5px 0;
+  color: #000;
+  font-weight: 800;
+}
+
+.header-text p {
+  color: #666;
+  margin: 0;
+  font-size: 16px;
+}
+
+.vitrine-nav {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.vitrine-nav button {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  width: 44px;
+  height: 44px;
+  border-radius: 25%;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  user-select: none;
+  padding: 0;
+}
+
+.vitrine-nav button:hover {
+  background: #e0e0e0;
+}
+
+.rows-container {
+  width: 100%;
+}
+
+.track-window {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.track {
+  white-space: nowrap;
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Initial State */
+.top-track {
+  transform: translateX(0);
+}
+
+.bot-track {
+  transform: translateX(0);
+}
+
+.card-wrapper {
+  width: 280px;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 16px;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.card {
+  width: 100%;
+  height: 320px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+}
+
+.brand-card {
+  padding: 24px;
+}
+
+.nike-style {
+  background-color: #ffeef2;
+}
+
+.adidas-style {
+  background-color: #f0f7ff;
+}
+
+.puma-style {
+  background-color: #fff9f0;
+}
+
+.nb-style {
+  background-color: #effff4;
+}
+
+.brand-logo {
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.brand-info h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.product-card {
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.img-box {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transform: scale(0.85);
+  transition: transform 0.4s ease;
+}
+
+.info-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 16px;
+  border-top: 1px solid #f0f0f0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.info-box h3 {
+  font-size: 14px;
+  margin: 0 0 6px 0;
+  color: #333;
+  font-weight: 400;
+}
+
+.info-box h4 {
+  font-size: 18px;
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+}
+
+.product-card:hover .info-box {
+  transform: translateY(0);
+}
+
+.product-card:hover .img-box img {
+  transform: scale(0.8) translateY(-25px);
+}

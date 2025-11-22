@@ -1,0 +1,45 @@
+@import url(../reset.css);
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./beneficios.css);
+@import url(./carrosel.css);
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+.pre-header-container,
+.header nav,
+.beneficios-container,
+.banner-nav {
+  font-size: 0;
+}
+
+html,
+body {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.degrade {
+  background: linear-gradient(90deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  height: 300px;
+}

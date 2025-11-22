@@ -1,0 +1,59 @@
+.pre-header {
+  background-color: #000;
+  color: white;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px;
+}
+
+.pre-header p {
+  margin: 0;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.pre-header svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.header nav {
+  display: inline-block;
+  text-align: center;
+}
+
+.header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+}

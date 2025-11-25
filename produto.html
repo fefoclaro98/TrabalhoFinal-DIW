@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/home/style.css">
   <link rel="stylesheet" href="./assets/css/pages/produto.css">
-  <title>Produto - Sneaker Store</title>
+  <title>Produtos - Sneaker Store</title>
 </head>
 
 <body>
@@ -44,28 +44,77 @@
       <a href="./about.html">Sobre</a>
     </nav>
     <div class="auth-buttons">
-    <a href="./login.html" class="btn-login">Entrar</a>
-    <a href="./cadastro.html" class="btn-cadastro">Cadastrar</a>
-  </div>
+      <a href="./login.html" class="btn-login">Entrar</a>
+      <a href="./cadastro.html" class="btn-cadastro">Cadastrar</a>
+    </div>
   </header>
 
   <main class="product-main">
-    <section class="product-container">
-      <div class="product-image">
-        <img
-          src="https://authenticfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/09f576c4-4a39-4592-b917-4b68602331c3___fd62a48dea9ad168ccb8223d3002a655.png"
-          alt="Tênis New Balance Fresh Foam X 1080">
-      </div>
-      <div class="product-details">
-        <h2>New Balance Fresh Foam X 1080</h2>
-        <p class="price">R$ 1.199,99</p>
-        <p class="description">
-          O New Balance Fresh Foam X 1080v13 oferece uma experiência de corrida suave e confortável. Com a tecnologia
-          Fresh Foam X na entressola, proporciona amortecimento superior e retorno de energia a cada passada. O cabedal
-          em malha respirável garante ajuste seguro e ventilação ideal.
-        </p>
-        <button class="buy-btn">Comprar Agora</button>
-      </div>
+    <section class="page-header">
+      <h2>Nossos Produtos</h2>
+      <p>Encontre o tênis perfeito para o seu estilo</p>
+    </section>
+
+    <section class="products-grid">
+      <!-- Produto 1: New Balance -->
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://authenticfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/09f576c4-4a39-4592-b917-4b68602331c3___fd62a48dea9ad168ccb8223d3002a655.png"
+            alt="Tênis New Balance Fresh Foam X 1080">
+          <span class="product-badge">Destaque</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">New Balance</span>
+          <h3 class="product-name">Fresh Foam X 1080</h3>
+          <p class="product-description">
+            Experiência de corrida suave com tecnologia Fresh Foam X na entressola. Amortecimento superior e retorno de energia a cada passada.
+          </p>
+          <div class="product-pricing">
+            <span class="price-original">R$ 1.399,99</span>
+            <span class="price-current">R$ 1.199,99</span>
+          </div>
+          <button class="buy-btn">Comprar Agora</button>
+        </div>
+      </article>
+
+      <!-- Produto 2: Adidas Adizero -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="./assets/img/adidasadizero.png" alt="Tênis Adidas Adizero">
+          <span class="product-badge new">Novo</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Adidas</span>
+          <h3 class="product-name">Adizero Boston 12</h3>
+          <p class="product-description">
+            Desenvolvido para velocidade máxima. Conta com placa de carbono ENERGYRODS 2.0 e espuma LIGHTSTRIKE PRO para impulsão explosiva em treinos e competições.
+          </p>
+          <div class="product-pricing">
+            <span class="price-current">R$ 900,00</span>
+          </div>
+          <button class="buy-btn">Comprar Agora</button>
+        </div>
+      </article>
+
+      <!-- Produto 3: Nike Dunk -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="./assets/img/nikedunk.png" alt="Tênis Nike Dunk">
+          <span class="product-badge new">Novo</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Nike</span>
+          <h3 class="product-name">Dunk Low Retro</h3>
+          <p class="product-description">
+            Um clássico que transcende gerações. Design icônico com couro premium e amortecimento Nike Air. Perfeito para o dia a dia com estilo autêntico streetwear.
+          </p>
+          <div class="product-pricing">
+            <span class="price-current">R$ 900,00</span>
+          </div>
+          <button class="buy-btn">Comprar Agora</button>
+        </div>
+      </article>
     </section>
   </main>
 
